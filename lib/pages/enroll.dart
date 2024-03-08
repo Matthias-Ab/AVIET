@@ -12,7 +12,7 @@ class UserEnroll extends StatelessWidget {
           padding:  const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
           alignment: Alignment.bottomCenter,
           height: 100,
-          decoration:   const BoxDecoration(color: Color.fromARGB(255, 3, 84, 150)),
+          decoration:   const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
 
 
           child:  Row(
@@ -26,7 +26,7 @@ class UserEnroll extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white
+                    color: Colors.blue
                   ),
                 ),
                 Text(
@@ -34,7 +34,7 @@ class UserEnroll extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.blue),
                 ),
               ],
             ),
