@@ -273,6 +273,7 @@ class UserEnroll extends StatelessWidget {
                         'General Familiarization Training',
                         style: TextStyle(
                           fontSize: 14,
+                          fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 3, 84, 150)
                         ),
                       ),
