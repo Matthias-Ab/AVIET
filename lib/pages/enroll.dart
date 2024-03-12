@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_bar/pages/forms/generalizatio.dart';
+import 'package:navigation_bar/pages/forms/familiarization.dart';
+import 'package:navigation_bar/pages/forms/nonpart.dart';
+import 'package:navigation_bar/pages/forms/specialized.dart';
+import 'package:navigation_bar/pages/forms/part.dart';
+
 
 class UserEnroll extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 3, 84, 150),
 // Header
       body: Column(children: [
         Container(
           padding:  const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
           alignment: Alignment.bottomCenter,
           height: 100,
-          decoration:   const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+          decoration:   const BoxDecoration(color: Color.fromARGB(255, 3, 84, 150)),
 
 
-          child:  Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child:  const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-            const Column(
+            Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
@@ -26,7 +32,7 @@ class UserEnroll extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue
+                    color: Color.fromARGB(255, 255, 255, 255),
                   ),
                 ),
                 Text(
@@ -34,7 +40,8 @@ class UserEnroll extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue),
+                    color: Color.fromARGB(255, 255, 255, 255),
+                  ),
                 ),
               ],
             ),
@@ -62,6 +69,7 @@ class UserEnroll extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 3, 84, 150),
                 ),
               ),
               const SizedBox(
@@ -101,7 +109,9 @@ class UserEnroll extends StatelessWidget {
                       ],
                       ),
                       IconButton(
-                        onPressed: () {}, 
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>  generalization()));
+                        }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Color.fromARGB(255, 3, 84, 150),
@@ -146,7 +156,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  UserEnroll()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  partcourse()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
@@ -192,7 +202,9 @@ class UserEnroll extends StatelessWidget {
                       ],
                       ),
                       IconButton(
-                        onPressed: () {}, 
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  nonpart()));
+                        }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Color.fromARGB(255, 3, 84, 150),
@@ -235,7 +247,9 @@ class UserEnroll extends StatelessWidget {
                       ],
                       ),
                       IconButton(
-                        onPressed: () {}, 
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  specialized()));
+                        }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Color.fromARGB(255, 3, 84, 150),
@@ -280,7 +294,9 @@ class UserEnroll extends StatelessWidget {
                       ],
                       ),
                       IconButton(
-                        onPressed: () {}, 
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => familiarization()));
+                        }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Color.fromARGB(255, 3, 84, 150),

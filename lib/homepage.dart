@@ -35,10 +35,11 @@ class _HomePageState extends State<HomePage> {
 
 
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromARGB(255, 3, 84, 150),
           currentIndex: _selectedIndex,
           onTap: _navigateBottomBar,
           type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Colors.blue[900],
+          unselectedItemColor: const Color.fromARGB(255, 221, 221, 221),
           selectedFontSize: 16,
           unselectedFontSize: 12,
           selectedItemColor: Colors.pink[400],
@@ -47,7 +48,9 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.book), label: "Courses"),
           BottomNavigationBarItem(icon: Icon(Icons.edit_document), label: "Enroll"),
           BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
+          
         ],
+        
       ),
     );
   }

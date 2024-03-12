@@ -7,29 +7,31 @@ class UserHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 3, 84, 150),
 // Header
       body: Column(children: [
         Container(
           padding:  const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
           alignment: Alignment.bottomCenter,
           height: 100,
-          decoration:   const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+          decoration:   const BoxDecoration(color: Color.fromARGB(255, 3, 84, 150)),
 
 
           child:  Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             mainAxisAlignment: MainAxisAlignment.center,
+            
             children: [
             const Column(
               mainAxisSize: MainAxisSize.min,
+              
               children: [
                 Text(
                   "AVIET AIRCRAFT",
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 8, 80, 138)
+                    color: Color.fromARGB(255, 255, 255, 255)
                   ),
                 ),
                 Text(
@@ -37,7 +39,7 @@ class UserHome extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 8, 89, 155)),
+                    color: Color.fromARGB(255, 255, 255, 255)),
                 ),
               ],
             ),
@@ -63,6 +65,7 @@ class UserHome extends StatelessWidget {
               const Text(
                 "We Provide",
                 style: TextStyle(
+                  color: Color.fromARGB(255, 255, 255, 255),
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                 ),
@@ -100,7 +103,7 @@ class UserHome extends StatelessWidget {
                         text: const TextSpan(
                         text: 'Non Part-145',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 11,
                         )
                       ))
@@ -131,7 +134,7 @@ class UserHome extends StatelessWidget {
                         text: const TextSpan(
                         text: 'PART-147 Courses',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 11,
                         )
                       ))
@@ -161,7 +164,7 @@ class UserHome extends StatelessWidget {
                         text: const TextSpan(
                         text: 'PART-145 AVIET Technic',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 11,
                           
                         )
@@ -188,7 +191,7 @@ class UserHome extends StatelessWidget {
                       Text(
                         "Upcoming Courses",
                         style: TextStyle (
-                          color: Color.fromARGB(255, 3, 84, 150),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         )
@@ -288,7 +291,9 @@ class UserHome extends StatelessWidget {
 
                     
                   ),
-
+                    SizedBox(
+                        height: 20,
+                      ),
                   // OUR APPROVALS
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -296,7 +301,7 @@ class UserHome extends StatelessWidget {
                       Text(
                         "Our Approvals",
                         style: TextStyle (
-                          color: Color.fromARGB(255, 3, 84, 150),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         )
