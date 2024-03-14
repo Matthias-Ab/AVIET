@@ -19,8 +19,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
-  
-assets:
-  - assets/icons
-  - assets/logo
+  assets:
+    - assets/
+    - assets/logo/aviet-white.png

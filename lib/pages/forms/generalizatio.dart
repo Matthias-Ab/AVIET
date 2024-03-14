@@ -186,7 +186,7 @@ class _generalizationState extends State<generalization> {
                   },
                   child: Text('Submit'),
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 3, 84, 150),
+                    backgroundColor: Color.fromARGB(255, 3, 84, 150),
                     textStyle: TextStyle(
                       color: Colors.pink.shade700
                     )

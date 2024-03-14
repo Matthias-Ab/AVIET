@@ -45,7 +45,7 @@ class UserHome extends StatelessWidget {
             ),
             Row(
               children: [
-                 Image.asset('assets/Logo/aviet-white.png'),
+                 Image.asset('assets/logo/aviet-white.png'),
                 //Icon()
               ],
             )
