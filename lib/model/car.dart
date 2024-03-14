@@ -1,6 +1,6 @@
 class Car {
   String image;
-  int price;
+  String price;
   String brand;
   String model;
   String co2;
@@ -18,8 +18,8 @@ class Car {
 
 List<Car> carList = [
   Car(
-    'assets/Logo/aviet.png-white',
-    120,
+    'assets/Logo/aviet.png',
+    "Airbus",
     'Airbus A220',
     '3A 9200',
     '77/km',
@@ -27,7 +27,7 @@ List<Car> carList = [
   ),
   Car(
     'assets/Logo/aviet.png',
-    185,
+    "Airbus",
     'Airbus A350',
     '3A 9200',
     '77/km',
@@ -35,7 +35,7 @@ List<Car> carList = [
   ),
   Car(
     'assets/Logo/aviet.png',
-    100,
+    "Airbus",
     'Boeing B777',
     '3A 9200',
     '77/km',
@@ -43,7 +43,7 @@ List<Car> carList = [
   ),
   Car(
     'assets/Logo/aviet.png',
-    90,
+    "Airbus",
     'Boeing B747',
     '3A 9200',
     '77/km',

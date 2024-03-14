@@ -214,12 +214,12 @@ class CarDetailScreen extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            CarItems(name: "Brand", value: car.brand, textColor: Colors.black),
+            CarItems(name: "Aircraft", value: car.brand, textColor: Colors.black),
             CarItems(
-                name: "Model No", value: car.model, textColor: Colors.black),
-            CarItems(name: "CO2", value: car.co2, textColor: Colors.black),
+                name: "Engine", value: car.model, textColor: Colors.black),
+            CarItems(name: "Practical", value: car.co2, textColor: Colors.black),
             CarItems(
-                name: "Fule Cons",
+                name: "Theoretical",
                 value: car.fuelCons,
                 textColor: Colors.black),
           ],
@@ -243,11 +243,11 @@ class CarDetailScreen extends StatelessWidget {
           ),
         ),
         const Text(
-          "Car Detail",
+          "Course Detail",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 25,
-            color: Colors.white,
+            color: Colors.blue,
           ),
         ),
         IconButton(

@@ -70,10 +70,10 @@ class UserCourses extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CarItems(name: "Brand", value: car.brand, textColor: Color.fromARGB(255, 3, 84, 150)),
-                            CarItems(name: "Model No", value: car.model, textColor: Color.fromARGB(255, 3, 84, 150)),
-                            CarItems(name: "CO2", value: car.co2, textColor: Color.fromARGB(255, 3, 84, 150)),
-                            CarItems(name: "Fule Cons", value: car.fuelCons, textColor: Color.fromARGB(255, 3, 84, 150)),
+                            CarItems(name: "Aircraft", value: car.brand, textColor: Color.fromARGB(255, 3, 84, 150)),
+                            CarItems(name: "Engine", value: car.model, textColor: Color.fromARGB(255, 3, 84, 150)),
+                            CarItems(name: "Practical", value: car.co2, textColor: Color.fromARGB(255, 3, 84, 150)),
+                            CarItems(name: "Theoretical", value: car.fuelCons, textColor: Color.fromARGB(255, 3, 84, 150)),
                           ],
                         )
                         
