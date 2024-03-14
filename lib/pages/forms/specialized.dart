@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class specialized extends StatefulWidget {
+  const specialized({super.key});
+
   @override
   _specializedState createState() => _specializedState();
 }
