@@ -19,7 +19,7 @@ class UserHome extends StatelessWidget {
 
           child:  Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             
             children: [
             const Column(
@@ -43,12 +43,12 @@ class UserHome extends StatelessWidget {
                 ),
               ],
             ),
-            // Row(
-            //   children: [
-            //     // Image.asset('../assets/Logo/aviet-white.png'),
-            //     Icon()
-            //   ],
-            // )
+            Row(
+              children: [
+                 Image.asset('assets/Logo/aviet-white.png'),
+                //Icon()
+              ],
+            )
           ]),
         ),
 

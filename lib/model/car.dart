@@ -1,4 +1,4 @@
-class Car {
+class Course {
   String image;
   String price;
   String brand;
@@ -6,7 +6,7 @@ class Car {
   String co2;
   String fuelCons;
 
-  Car(
+  Course(
     this.image,
     this.price,
     this.brand,
@@ -16,8 +16,8 @@ class Car {
   );
 }
 
-List<Car> carList = [
-  Car(
+List<Course> courseList = [
+  Course(
     'assets/Logo/aviet.png',
     "Airbus",
     'Airbus A220',
@@ -25,7 +25,7 @@ List<Car> carList = [
     '77/km',
     '5,5 L',
   ),
-  Car(
+  Course(
     'assets/Logo/aviet.png',
     "Airbus",
     'Airbus A350',
@@ -33,7 +33,7 @@ List<Car> carList = [
     '77/km',
     '5,5 L',
   ),
-  Car(
+  Course(
     'assets/Logo/aviet.png',
     "Airbus",
     'Boeing B777',
@@ -41,7 +41,7 @@ List<Car> carList = [
     '77/km',
     '5,5 L',
   ),
-  Car(
+  Course(
     'assets/Logo/aviet.png',
     "Airbus",
     'Boeing B747',
