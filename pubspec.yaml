@@ -21,4 +21,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/place-flying-sunset-sky-removebg-preview.png
     - assets/logo/aviet-white.png
+    - assets/blue bg.jpg

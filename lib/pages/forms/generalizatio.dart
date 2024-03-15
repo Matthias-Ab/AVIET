@@ -23,7 +23,7 @@ class _generalizationState extends State<generalization> {
         title: Text('General Training Form',),
         backgroundColor: Color.fromARGB(255, 3, 84, 150),
         //color: Color.fromARGB(255, 3, 84, 150),
-        foregroundColor: Color.fromARGB(255, 160, 5, 126),
+        foregroundColor: Color.fromARGB(255, 255, 255, 255),
         
       ),
       body: SingleChildScrollView(
@@ -73,7 +73,8 @@ class _generalizationState extends State<generalization> {
                 TextFormField(
                   decoration: InputDecoration(
                     labelText: "Company",
-                    border: OutlineInputBorder()
+                    border: OutlineInputBorder(),
+                    focusColor: Colors.white,
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -127,7 +128,7 @@ class _generalizationState extends State<generalization> {
                     ),
                   ),
                    // Currently selected value
-                  hint: Text('Course Name'), // Placeholder text
+                  hint: Text('Course Name',), // Placeholder text
                   items: [
                       // List of DropdownMenuItem objects
                     DropdownMenuItem(
@@ -186,9 +187,9 @@ class _generalizationState extends State<generalization> {
                   },
                   child: Text('Submit'),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 3, 84, 150),
+                    backgroundColor: Color.fromARGB(255, 150, 3, 94),
                     textStyle: TextStyle(
-                      color: Colors.pink.shade700
+                      color: const Color.fromARGB(255, 255, 255, 255)
                     )
                   ),
                 ),

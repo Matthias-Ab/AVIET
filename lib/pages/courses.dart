@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_bar/Detail/course_detail.dart';
 import 'package:navigation_bar/common/card_list.dart';
 import 'package:navigation_bar/model/car.dart';
-// import 'package:navigation_bar/Detail/course_detail.dart';
+import 'package:navigation_bar/Detail/course_detail.dart';
 import 'package:navigation_bar/common/card_list.dart';
 
 class UserCourses extends StatelessWidget {
   const UserCourses({super.key});
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +39,9 @@ class UserCourses extends StatelessWidget {
         itemBuilder: (context, index) {
           final course = courseList[index];
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>  CourseDetail(course)));
+            },
             child: Container(
               margin: const EdgeInsets.only(bottom: 20),
               child: Stack(
@@ -68,7 +72,7 @@ class UserCourses extends StatelessWidget {
                               color: Colors.blue.shade900,
                               fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Row(
@@ -85,12 +89,12 @@ class UserCourses extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    right: 30,
-                    bottom: 60,
+                    right: 0,
+                    bottom: 30,
                     child: Image.asset(
                       course.image,
-                      color: Colors.blue.shade900,
-                      height: 70,
+                      // color: Colors.blue.shade900,
+                      height: 200,
                     ),
                   )
                 ],
