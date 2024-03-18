@@ -79,8 +79,8 @@ class UserCourses extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             CourseItems(name: "Course", value: course.brand),
-                            CourseItems(name: "Engine", value: course.model),
-                            CourseItems(name: "CO2", value: course.co2),
+                            CourseItems(name: "From", value: course.model),
+                            CourseItems(name: "To", value: course.co2),
                             CourseItems(name: "Duration", value: course.fuelCons),
 
                           ],

@@ -25,53 +25,20 @@ class CourseDetail extends StatelessWidget {
           right: 10,
           bottom: 25,
           child: Stack(
-            children: [ 
+            children: [
               Container(
-                padding: EdgeInsets.all(15),
-                margin: EdgeInsets.only(top: 45),
+                padding: const EdgeInsets.all(15),
+                margin: const EdgeInsets.only(top: 45),
                 decoration: BoxDecoration(
-                  color: Colors.blue.shade900,
-                ),
-
-                
-
-                child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          course.price.toString(),
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 25,
-                            color: Colors.pink[400],
-                          ),
-                        ),
-                        Text(
-                          "Aircraft Type",
-                          style: TextStyle(
-                              color: Colors.blue.shade900,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CourseItems(name: "Course", value: course.brand),
-                            CourseItems(name: "Engine", value: course.model),
-                            CourseItems(name: "CO2", value: course.co2),
-                            CourseItems(name: "Duration", value: course.fuelCons),
-
-                          ],
-                        )
-                      ],
-                    ),
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(20)),
+                child: courseInformation(),
               ),
-              Positioned( 
-                right: 60,
+              Positioned(
+                right: -30,
                 child: Image.asset(
                   course.image,
+                  height: 200,
                 ),
               )
             ],
@@ -83,6 +50,94 @@ class CourseDetail extends StatelessWidget {
     ));
   }
 
+  Column courseInformation() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          course.price.toString(),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+            color: Colors.pink[400],
+          ),
+        ),
+        const Text(
+          "Aircraft Type",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(
+          height: 15,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            CourseItems(
+              name: "Course",
+              value: course.brand,
+              textColor: Colors.black,
+            ),
+            CourseItems(
+                name: "From", value: course.model, textColor: Colors.black),
+            CourseItems(name: "To", value: course.co2, textColor: Colors.black),
+            CourseItems(
+                name: "Duration",
+                value: course.fuelCons,
+                textColor: Colors.black),
+          ],
+        ),
+        Divider(
+          height: 50,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "- BOEING 747-400 (GE CF-6) AND BOEING 747-400 \n (GE CF-6 TO PW4000) DIFFERENCES",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "- BOEING 747-400 (GE CF-6) AND BOEING 747-400 \n (GE CF-6 TO PW4000) DIFFERENCES",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "- BOEING 747-400 (GE CF-6) AND BOEING 747-400 \n (GE CF-6 TO PW4000) DIFFERENCES",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "- BOEING 747-400 (GE CF-6) AND BOEING 747-400 \n (GE CF-6 TO PW4000) DIFFERENCES",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "- BOEING 747-400 (GE CF-6) AND BOEING 747-400 \n (GE CF-6 TO PW4000) DIFFERENCES",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
   SafeArea courseDetailAppbar(BuildContext context) {
     return SafeArea(
       child: Row(
@@ -92,21 +147,22 @@ class CourseDetail extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(Icons.arrow_back_ios, color: Colors.pink),
+            icon: const Icon(Icons.arrow_back_ios, color: Colors.pink, size: 40,),
           ),
           const Text(
+            textAlign: TextAlign.right,
+            
             "Course Detail",
+            
             style: TextStyle(
                 fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
           ),
+
           IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
-            ),
+            icon: const Icon(Icons.arrow_back_ios, color: Colors.pink, size: 40,),
           ),
         ],
       ),
