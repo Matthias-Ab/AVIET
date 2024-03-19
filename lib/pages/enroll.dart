@@ -7,11 +7,13 @@ import 'package:navigation_bar/pages/forms/part.dart';
 
 
 class UserEnroll extends StatelessWidget {
+  const UserEnroll({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 3, 84, 150),
+      backgroundColor: const Color.fromARGB(255, 3, 84, 150),
 // Header
       body: Column(children: [
         Container(
@@ -110,7 +112,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>  generalization()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>  const generalization()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
@@ -156,7 +158,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  partcourse()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  const partcourse()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
@@ -203,7 +205,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  nonpart()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  const nonpart()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
@@ -248,7 +250,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  specialized()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) =>  const specialized()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
@@ -295,7 +297,7 @@ class UserEnroll extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => familiarization()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const familiarization()));
                         }, 
                         icon: const Icon(
                         Icons.arrow_circle_right,

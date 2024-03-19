@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:navigation_bar/Detail/course_detail.dart';
 import 'package:navigation_bar/common/card_list.dart';
 import 'package:navigation_bar/model/car.dart';
-import 'package:navigation_bar/Detail/course_detail.dart';
-import 'package:navigation_bar/common/card_list.dart';
 
 class UserCourses extends StatelessWidget {
   const UserCourses({super.key});

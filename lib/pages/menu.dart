@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class UserMenu extends StatelessWidget {
+  const UserMenu({super.key});
+
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         "Menu Page",
         style: TextStyle(fontSize: 50),

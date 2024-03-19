@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 // import '../assets/Logo/';
 
 class UserHome extends StatelessWidget {
+  const UserHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 3, 84, 150),
+      backgroundColor: const Color.fromARGB(255, 3, 84, 150),
       // Header
       body: Column(children: [
         Container(
@@ -76,7 +77,7 @@ class UserHome extends StatelessWidget {
                           padding: const EdgeInsets.all(38),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.airplanemode_on)
+                          child: const Icon(Icons.airplanemode_on)
                           //Image.asset('../assets/icons/open-book.png'),
 
                           ),
@@ -105,7 +106,7 @@ class UserHome extends StatelessWidget {
                           margin: const EdgeInsets.only(left: 20),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.library_books)
+                          child: const Icon(Icons.library_books)
                           //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
                           ),
                       const SizedBox(
@@ -133,7 +134,7 @@ class UserHome extends StatelessWidget {
                           margin: const EdgeInsets.only(left: 20),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.tire_repair)
+                          child: const Icon(Icons.tire_repair)
                           // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
                           ),
                       const SizedBox(
@@ -206,7 +207,7 @@ class UserHome extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => UserHome()));
+                                    builder: (context) => const UserHome()));
                           },
                           icon: const Icon(
                             Icons.arrow_circle_right,
@@ -254,7 +255,7 @@ class UserHome extends StatelessWidget {
 
                          
 
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
 
@@ -284,7 +285,7 @@ class UserHome extends StatelessWidget {
                           padding: const EdgeInsets.all(38),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.airplanemode_on)
+                          child: const Icon(Icons.airplanemode_on)
                           //Image.asset('../assets/icons/open-book.png'),
 
                           ),
@@ -313,7 +314,7 @@ class UserHome extends StatelessWidget {
                           margin: const EdgeInsets.only(left: 20),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.library_books)
+                          child: const Icon(Icons.library_books)
                           //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
                           ),
                       const SizedBox(
@@ -342,7 +343,7 @@ class UserHome extends StatelessWidget {
                           margin: const EdgeInsets.only(left: 20),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.tire_repair)
+                          child: const Icon(Icons.tire_repair)
                           // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
                           ),
                       const SizedBox(
@@ -360,7 +361,7 @@ class UserHome extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
 
@@ -377,7 +378,7 @@ class UserHome extends StatelessWidget {
                           padding: const EdgeInsets.all(38),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.airplanemode_on)
+                          child: const Icon(Icons.airplanemode_on)
                           //Image.asset('../assets/icons/open-book.png'),
 
                           ),
@@ -406,7 +407,7 @@ class UserHome extends StatelessWidget {
                           margin: const EdgeInsets.only(left: 20),
                           height: 100,
                           width: 100,
-                          child: Icon(Icons.library_books)
+                          child: const Icon(Icons.library_books)
                           //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
                           ),
                       const SizedBox(
@@ -423,7 +424,7 @@ class UserHome extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               // OUR APPROVALS
@@ -470,7 +471,7 @@ class UserHome extends StatelessWidget {
   Widget buildCard() => Container(
         width: 200,
         height: 500,
-        color: Color.fromARGB(255, 3, 84, 150),
+        color: const Color.fromARGB(255, 3, 84, 150),
         child: Column(
           children: [
             Image.network(

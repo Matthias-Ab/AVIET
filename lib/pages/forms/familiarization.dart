@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class familiarization extends StatefulWidget {
+  const familiarization({super.key});
+
   @override
   _familiarizationState createState() => _familiarizationState();
 }
@@ -9,7 +11,7 @@ class _familiarizationState extends State<familiarization> {
   final _formKey = GlobalKey<FormState>();
   String _name = "";
   int _age = 0;
-  String _sex = "";
+  final String _sex = "";
 
   final List<String> _sexOptions = ["Male", "Female", "Other"];
 
@@ -17,7 +19,7 @@ class _familiarizationState extends State<familiarization> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('General Training Form'),
+        title: const Text('General Training Form'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -27,7 +29,7 @@ class _familiarizationState extends State<familiarization> {
             child: Column(
               children: [
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: " First Name",
                   ),
                   validator: (value) {
@@ -39,7 +41,7 @@ class _familiarizationState extends State<familiarization> {
                   onSaved: (value) => setState(() => _name = value!),
                 ),
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Last Name",
                   ),
                   validator: (value) {
@@ -52,7 +54,7 @@ class _familiarizationState extends State<familiarization> {
                 ),
 
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Company",
                   ),
                   validator: (value) {
@@ -65,7 +67,7 @@ class _familiarizationState extends State<familiarization> {
                 ),
                 
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Phone Number",
                   ),
                   keyboardType: TextInputType.number,
@@ -90,7 +92,7 @@ class _familiarizationState extends State<familiarization> {
                       print('Name: $_name, Age: $_age, Sex: $_sex');
                     }
                   },
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
               ],
             ),

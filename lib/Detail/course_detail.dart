@@ -86,10 +86,10 @@ class CourseDetail extends StatelessWidget {
                 textColor: Colors.black),
           ],
         ),
-        Divider(
+        const Divider(
           height: 50,
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
@@ -98,7 +98,7 @@ class CourseDetail extends StatelessWidget {
             ),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
@@ -107,7 +107,7 @@ class CourseDetail extends StatelessWidget {
             ),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
@@ -116,7 +116,7 @@ class CourseDetail extends StatelessWidget {
             ),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
@@ -125,7 +125,7 @@ class CourseDetail extends StatelessWidget {
             ),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(

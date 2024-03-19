@@ -6,7 +6,7 @@ import 'package:navigation_bar/pages/menu.dart';
 
 
 class HomePage extends StatefulWidget {
-  const HomePage ({Key? key}) : super(key: key);
+  const HomePage ({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -22,10 +22,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _pages = [
-    UserHome(),
-    UserCourses(),
-    UserEnroll(),
-    UserMenu(),
+    const UserHome(),
+    const UserCourses(),
+    const UserEnroll(),
+    const UserMenu(),
   ];
 
   @override
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
 
 
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromARGB(255, 3, 84, 150),
+        backgroundColor: const Color.fromARGB(255, 3, 84, 150),
           currentIndex: _selectedIndex,
           onTap: _navigateBottomBar,
           type: BottomNavigationBarType.fixed,
@@ -44,10 +44,10 @@ class _HomePageState extends State<HomePage> {
           unselectedFontSize: 12,
           selectedItemColor: Colors.pink[400],
           items: [ 
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home", backgroundColor: Colors.pink[400]),
-          BottomNavigationBarItem(icon: Icon(Icons.book), label: "Courses"),
-          BottomNavigationBarItem(icon: Icon(Icons.edit_document), label: "Enroll"),
-          BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
+          BottomNavigationBarItem(icon: const Icon(Icons.home), label: "Home", backgroundColor: Colors.pink[400]),
+          const BottomNavigationBarItem(icon: Icon(Icons.book), label: "Courses"),
+          const BottomNavigationBarItem(icon: Icon(Icons.edit_document), label: "Enroll"),
+          const BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
           
         ],
         

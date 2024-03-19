@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class nonpart extends StatefulWidget {
+  const nonpart({super.key});
+
   @override
   _nonpartState createState() => _nonpartState();
 }
@@ -9,7 +11,7 @@ class _nonpartState extends State<nonpart> {
   final _formKey = GlobalKey<FormState>();
   String _name = "";
   int _age = 0;
-  String _sex = "";
+  final String _sex = "";
 
   final List<String> _sexOptions = ["Male", "Female", "Other"];
 
@@ -17,7 +19,7 @@ class _nonpartState extends State<nonpart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('User Form'),
+        title: const Text('User Form'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -27,7 +29,7 @@ class _nonpartState extends State<nonpart> {
             child: Column(
               children: [
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: " First Name",
                   ),
                   validator: (value) {
@@ -39,7 +41,7 @@ class _nonpartState extends State<nonpart> {
                   onSaved: (value) => setState(() => _name = value!),
                 ),
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Last Name",
                   ),
                   validator: (value) {
@@ -52,7 +54,7 @@ class _nonpartState extends State<nonpart> {
                 ),
 
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Company",
                   ),
                   validator: (value) {
@@ -65,7 +67,7 @@ class _nonpartState extends State<nonpart> {
                 ),
                 
                 TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Phone Number",
                   ),
                   keyboardType: TextInputType.number,
@@ -90,7 +92,7 @@ class _nonpartState extends State<nonpart> {
                       print('Name: $_name, Age: $_age, Sex: $_sex');
                     }
                   },
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
               ],
             ),
