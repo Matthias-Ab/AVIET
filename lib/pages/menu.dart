@@ -6,10 +6,20 @@ class UserMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "Menu Page",
-        style: TextStyle(fontSize: 50),
+    return  Scaffold(
+      backgroundColor: const Color.fromARGB(255, 3, 84, 150),
+       appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 3, 84, 150),
+        title: const Text(
+          "Discover More",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+        
       ),
     );
   }

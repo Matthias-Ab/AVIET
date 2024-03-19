@@ -16,7 +16,7 @@ class CourseDetail extends StatelessWidget {
           "assets/aviet locations.png",
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          fit: BoxFit.fill,
+          fit: BoxFit.fitHeight,
         ),
 
         courseDetailAppbar(context),
@@ -30,7 +30,7 @@ class CourseDetail extends StatelessWidget {
                 padding: const EdgeInsets.all(15),
                 margin: const EdgeInsets.only(top: 45),
                 decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: Colors.white70,
                     borderRadius: BorderRadius.circular(20)),
                 child: courseInformation(),
               ),
@@ -141,13 +141,14 @@ class CourseDetail extends StatelessWidget {
   SafeArea courseDetailAppbar(BuildContext context) {
     return SafeArea(
       child: Row(
+        
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(Icons.arrow_back_ios, color: Colors.pink, size: 40,),
+            icon: const Icon(Icons.arrow_back, color: Colors.white, size: 40,),
           ),
           const Text(
             textAlign: TextAlign.right,
@@ -162,7 +163,7 @@ class CourseDetail extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(Icons.arrow_back_ios, color: Colors.pink, size: 40,),
+            icon: const Icon(Icons.arrow_back, color: Colors.white, size: 40,),
           ),
         ],
       ),

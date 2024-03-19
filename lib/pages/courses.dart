@@ -21,15 +21,7 @@ class UserCourses extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        actions: const [
-          Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
-          SizedBox(
-            width: 20,
-          )
-        ],
+        
       ),
       body: ListView.builder(
         shrinkWrap: true,

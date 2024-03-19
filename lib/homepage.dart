@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: const Icon(Icons.home), label: "Home", backgroundColor: Colors.pink[400]),
           const BottomNavigationBarItem(icon: Icon(Icons.book), label: "Courses"),
           const BottomNavigationBarItem(icon: Icon(Icons.edit_document), label: "Enroll"),
-          const BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu"),
+          const BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket_outlined), label: "More"),
           
         ],
         

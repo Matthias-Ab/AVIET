@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'courses.dart';
 // import '../assets/Logo/';
 
 class UserHome extends StatelessWidget {
@@ -184,8 +185,12 @@ class UserHome extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15)),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Row(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>const UserCourses()));
+                        },
+                        child: const Row(
                         children: [
                           Icon(
                             Icons.book,
@@ -202,12 +207,14 @@ class UserHome extends StatelessWidget {
                           ),
                         ],
                       ),
+                      ),
+                       
                       IconButton(
                           onPressed: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const UserHome()));
+                                    builder: (context) => const UserCourses()));
                           },
                           icon: const Icon(
                             Icons.arrow_circle_right,
@@ -225,8 +232,12 @@ class UserHome extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15)),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Row(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>UserCourses()));
+                        },
+                        child: const Row(
                         children: [
                           Icon(
                             Icons.book,
@@ -243,17 +254,21 @@ class UserHome extends StatelessWidget {
                           ),
                         ],
                       ),
+                      ),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const UserCourses()));
+                          },
                           icon: const Icon(
                             Icons.arrow_circle_right,
                             color: Color.fromARGB(255, 3, 84, 150),
                           ))
-                    ]),
+                    ]
+                    ),
               ),
-
-
-                         
 
               const SizedBox(
                 height: 20,
@@ -277,8 +292,17 @@ class UserHome extends StatelessWidget {
                 children: [
                   // Training Request
                   Column(
-                    children: [
-                      Container(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) =>
+                                      UserCourses()))); // This Navigation Should be changed
+                        },
+                      
+                      child: Container(
                           decoration: BoxDecoration(
                               color: const Color.fromARGB(255, 228, 19, 158),
                               borderRadius: BorderRadius.circular(100)),
@@ -287,6 +311,8 @@ class UserHome extends StatelessWidget {
                           width: 100,
                           child: const Icon(Icons.airplanemode_on)
                           //Image.asset('../assets/icons/open-book.png'),
+
+                          ),
 
                           ),
                       const SizedBox(
@@ -305,18 +331,27 @@ class UserHome extends StatelessWidget {
                   // PART-147 Courses
 
                   Column(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 228, 19, 158),
-                              borderRadius: BorderRadius.circular(100)),
-                          padding: const EdgeInsets.all(38),
-                          margin: const EdgeInsets.only(left: 20),
-                          height: 100,
-                          width: 100,
-                          child: const Icon(Icons.library_books)
-                          //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
-                          ),
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) =>
+                                      UserCourses()))); // This Navigation Should be changed
+                        },
+                        child: Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 228, 19, 158),
+                                borderRadius: BorderRadius.circular(100)),
+                            padding: const EdgeInsets.all(38),
+                            margin: const EdgeInsets.only(left: 20),
+                            height: 100,
+                            width: 100,
+                            child: const Icon(Icons.gas_meter)
+                            //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
+                            ),
+                      ),
                       const SizedBox(
                         height: 15,
                       ),
@@ -334,18 +369,27 @@ class UserHome extends StatelessWidget {
 
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 228, 19, 158),
-                              borderRadius: BorderRadius.circular(100)),
-                          padding: const EdgeInsets.all(38),
-                          margin: const EdgeInsets.only(left: 20),
-                          height: 100,
-                          width: 100,
-                          child: const Icon(Icons.tire_repair)
-                          // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
-                          ),
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) =>
+                                      UserCourses()))); // This Navigation Should be changed
+                        },
+                        child: Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 228, 19, 158),
+                                borderRadius: BorderRadius.circular(100)),
+                            padding: const EdgeInsets.all(38),
+                            margin: const EdgeInsets.only(left: 20),
+                            height: 100,
+                            width: 100,
+                            child: const Icon(Icons.golf_course)
+                            // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
+                            ),
+                      ),
                       const SizedBox(
                         height: 15,
                       ),
@@ -370,18 +414,27 @@ class UserHome extends StatelessWidget {
                 children: [
                   // Training Request
                   Column(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 228, 19, 158),
-                              borderRadius: BorderRadius.circular(100)),
-                          padding: const EdgeInsets.all(38),
-                          height: 100,
-                          width: 100,
-                          child: const Icon(Icons.airplanemode_on)
-                          //Image.asset('../assets/icons/open-book.png'),
-
-                          ),
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) =>
+                                      UserCourses()))); // This Navigation Should be changed
+                        },
+                        child: Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 228, 19, 158),
+                                borderRadius: BorderRadius.circular(100)),
+                            padding: const EdgeInsets.all(38),
+                            margin: const EdgeInsets.only(left: 20),
+                            height: 100,
+                            width: 100,
+                            child: const Icon(Icons.tire_repair)
+                            // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
+                            ),
+                      ),
                       const SizedBox(
                         height: 15,
                       ),
@@ -398,18 +451,27 @@ class UserHome extends StatelessWidget {
                   // PART-147 Courses
 
                   Column(
-                    children: [
-                      Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 228, 19, 158),
-                              borderRadius: BorderRadius.circular(100)),
-                          padding: const EdgeInsets.all(38),
-                          margin: const EdgeInsets.only(left: 20),
-                          height: 100,
-                          width: 100,
-                          child: const Icon(Icons.library_books)
-                          //Image.asset('../assets/icons/book-of-black-cover-closed.png'),
-                          ),
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) =>
+                                      UserCourses()))); // This Navigation Should be changed
+                        },
+                        child: Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 228, 19, 158),
+                                borderRadius: BorderRadius.circular(100)),
+                            padding: const EdgeInsets.all(38),
+                            margin: const EdgeInsets.only(left: 20),
+                            height: 100,
+                            width: 100,
+                            child: const Icon(Icons.tire_repair)
+                            // Image.asset('../assets/icons/screwdriver-and-doble-wrench.png'),
+                            ),
+                      ),
                       const SizedBox(
                         height: 15,
                       ),
