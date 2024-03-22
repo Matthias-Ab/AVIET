@@ -17,9 +17,16 @@ class _nonpartState extends State<nonpart> {
 
   @override
   Widget build(BuildContext context) {
+    
+    String selectedValue;
     return Scaffold(
+      //backgroundColor: const Color.fromARGB(255, 3, 84, 150),
       appBar: AppBar(
-        title: const Text('User Form'),
+        title: const Text('General Training Form',),
+        backgroundColor: const Color.fromARGB(255, 3, 84, 150),
+        //color: Color.fromARGB(255, 3, 84, 150),
+        foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+        
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -31,18 +38,8 @@ class _nonpartState extends State<nonpart> {
                 TextFormField(
                   decoration: const InputDecoration(
                     labelText: " First Name",
-                  ),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter your name';
-                    }
-                    return null;
-                  },
-                  onSaved: (value) => setState(() => _name = value!),
-                ),
-                TextFormField(
-                  decoration: const InputDecoration(
-                    labelText: "Last Name",
+                    
+                    border: OutlineInputBorder()
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -53,9 +50,33 @@ class _nonpartState extends State<nonpart> {
                   onSaved: (value) => setState(() => _name = value!),
                 ),
 
+                const SizedBox(
+                        height: 20,
+                      ),
+
+                TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: "Last Name",
+                    border: OutlineInputBorder()
+                  ),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter your name';
+                    }
+                    return null;
+                  },
+                  onSaved: (value) => setState(() => _name = value!),
+                ),
+
+                const SizedBox(
+                        height: 20,
+                      ),
+
                 TextFormField(
                   decoration: const InputDecoration(
                     labelText: "Company",
+                    border: OutlineInputBorder(),
+                    focusColor: Colors.white,
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -65,10 +86,21 @@ class _nonpartState extends State<nonpart> {
                   },
                   onSaved: (value) => setState(() => _name = value!),
                 ),
+
+                const SizedBox(
+                        height: 20,
+                      ),
                 
                 TextFormField(
                   decoration: const InputDecoration(
                     labelText: "Phone Number",
+
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 3, 84, 150),
+                      )
+                    ),
+                    
                   ),
                   keyboardType: TextInputType.number,
                   validator: (value) {
@@ -83,8 +115,15 @@ class _nonpartState extends State<nonpart> {
                   },
                   onSaved: (value) => setState(() => _age = int.parse(value!)),
                 ),
+
+                const SizedBox(
+                        height: 20,
+                      ),
+                
+             
                 
                 ElevatedButton(
+                  
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
@@ -92,6 +131,13 @@ class _nonpartState extends State<nonpart> {
                       print('Name: $_name, Age: $_age, Sex: $_sex');
                     }
                   },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 150, 3, 94),
+                    foregroundColor: const Color.fromARGB(255, 255, 255, 255),
+                    textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255)
+                    )
+                  ),
                   child: const Text('Submit'),
                 ),
               ],

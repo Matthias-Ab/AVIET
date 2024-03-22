@@ -20,7 +20,7 @@ class _generalizationState extends State<generalization> {
     
     String selectedValue;
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 3, 84, 150),
+      //backgroundColor: const Color.fromARGB(255, 3, 84, 150),
       appBar: AppBar(
         title: const Text('General Training Form',),
         backgroundColor: const Color.fromARGB(255, 3, 84, 150),
@@ -133,6 +133,7 @@ class _generalizationState extends State<generalization> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 150, 3, 94),
+                    foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                     textStyle: const TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255)
                     )
