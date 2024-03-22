@@ -152,17 +152,17 @@ class UserMenu extends StatelessWidget {
               
               // UPCOMING COURSES
 
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text("PART-147 Courses Aircraft Types",
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 255, 255, 255),
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ))
-                ],
-              ),
+              // const Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //   children: [
+              //     Text("PART-147 Courses Aircraft Types",
+              //         style: TextStyle(
+              //           color: Color.fromARGB(255, 255, 255, 255),
+              //           fontSize: 18,
+              //           fontWeight: FontWeight.bold,
+              //         ))
+              //   ],
+              // ),
 
               // Aribus and Boeing List View
 
@@ -327,7 +327,7 @@ class UserMenu extends StatelessWidget {
                       ),
                       RichText(
                           text: const TextSpan(
-                              text: 'EWIS',
+                              text: 'AVIET TECHNIC',
                               style: TextStyle(
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 fontSize: 11,
